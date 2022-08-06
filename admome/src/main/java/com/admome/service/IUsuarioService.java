@@ -4,7 +4,8 @@ import java.util.List;
 
 import com.admome.model.Usuario;
 
-public interface IUsuarioService {
+
+public interface IUsuarioService  {
 
 	public List<Usuario> findAll();
 	
