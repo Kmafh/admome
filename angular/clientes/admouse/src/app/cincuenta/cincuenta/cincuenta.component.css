@@ -1,0 +1,32 @@
+.bg-oscuro{
+    background-color: #6d6d71;
+    color:aliceblue;
+}
+.menu{
+    margin-top: 5px;
+}
+.menu:hover{
+    background-color: #f6f4f6;
+    border-left: 5px solid #6d6d71;
+    margin-left: 2px;
+}
+
+.menuhorizonte:hover{
+    background-color: #f6f4f6;
+    color: #6d6d71;
+}
+.botonmenuhorizonte{
+    background-color: #f7a811;
+    border: 1px #f7a811 solid;
+    width: 100px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+.botonmenuhorizonte:hover{
+    background-color: #ffb72c;
+    color: #6d6d71;
+}
+.columenu{
+    position: relative;
+    height: 840px;
+}

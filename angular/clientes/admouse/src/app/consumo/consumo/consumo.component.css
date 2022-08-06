@@ -1,0 +1,11 @@
+.fondo{
+    background-image: url('../../../assets/img/washing.png');
+    background-repeat: no-repeat;
+}
+.bg-oscuro{
+    background-color: #6d6d71;
+    color:aliceblue;
+}
+.font{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}

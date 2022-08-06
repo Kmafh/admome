@@ -1,0 +1,5 @@
+package com.admome.model;
+
+public class Usuario {
+
+}

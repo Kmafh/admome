@@ -1,0 +1,4 @@
+INSERT into usuarios (nombre,password,email,create_at) values ('Paco','123','dr@fd.com','13-05-1989');
+INSERT into usuarios (nombre,password,email,create_at) values ('Maria','123','dr@fd.com','13-05-1989');
+INSERT into usuarios (nombre,password,email,create_at) values ('Estela','123','dr@fd.com','13-05-1989');
+INSERT into usuarios (nombre,password,email,create_at) values ('Juan','123','dr@fd.com','13-05-1989');

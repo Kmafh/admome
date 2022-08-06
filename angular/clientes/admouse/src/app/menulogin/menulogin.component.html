@@ -1,0 +1,35 @@
+ <!-- Cuerpo del modal, formulario-->
+
+ <div class="row">
+    <div class="col-4">
+  <img src="../assets/img/registro.png" class="img-fluid rounded"alt="">
+    </div>
+    <div class="col-8 form-group">
+  
+      <form class="custom-form">
+       <div class="row mb-3">
+         <div class="col-sm-10">
+           <label for="usuario" class="col-form-label">Nombre</label>
+           <input type="text" class="form-control" placeholder="Nombre usuario" [(ngModel)]="usuario.nombre" name="nombre" required="required">
+         </div>
+       </div>
+       <div class="row mb-3">
+         <div class="col-sm-10">
+           <input type="password" class="form-control" placeholder="password" [(ngModel)]="usuario.password" name="password" required="required">
+         </div>
+       </div>
+       <div class="row mb-3">
+         <div class="col-sm-9">
+           <p class="text-center"><a href="#" class="text-decoration-none text-success">¿Has olvidado tu contraseña?</a></p>
+         </div>
+         <div class="col-sm-9">
+         <button type="submit" class="btn btn-success" (click)="login()">Iniciar sesión</button>
+         </div>
+  
+       </div>
+     </form>
+  
+  
+  
+    </div>
+     </div>

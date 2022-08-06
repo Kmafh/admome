@@ -1,0 +1,12 @@
+package com.admome.model;
+
+import java.util.Date;
+
+public class Usuario {
+
+	private Long id;
+	private String nombre;
+	private String password;
+	private String  email;
+	private Date  createAt;
+}

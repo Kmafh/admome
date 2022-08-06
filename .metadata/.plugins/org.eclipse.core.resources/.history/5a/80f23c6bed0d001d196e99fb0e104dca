@@ -1,0 +1,11 @@
+package com.admome.model;
+
+public class Usuario {
+
+	private Long d;
+	d: number;
+	  nombre: string;
+	  password: string;
+	  email: string;
+	  createAt: string;
+}

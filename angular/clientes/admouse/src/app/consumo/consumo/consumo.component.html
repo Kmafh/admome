@@ -1,0 +1,106 @@
+
+<div class="container font">
+
+    <div class="row">
+
+        <div class="col-md-4 mt-3">
+            <div class="col-12 ">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-4"> <img src="../../../assets/img/tvtrasn.png" alt="" class="img-fluid"></div>
+                            <div class="col-8">Electrodomestico<br>
+                                <select class="form-select" aria-label="Default select example" [(ngModel)]="select" (click)="hability=false" (click)="habiliityex=true">
+                                    <option [value]="item" *ngFor="let item of lista">{{item}}</option>
+                                   
+                                  </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+            <div class="col-12 mt-2">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-4"> <img src="../../../assets/img/washing.png" alt="" class="img-fluid"></div>
+                            <div class="col-8">Potencia Kwh<br>
+                                <input class="form-control" type="text" placeholder="2.5" aria-label="default input example" #potencia (keyup)="0" (click)="hability=false" (click)="habiliityex=true">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+            <div class="col-12 mt-2">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-4"> <img src="../../../assets/img/relojConsumo.png" alt="" class="img-fluid"></div>
+                            <div class="col-8">Tiempo<br>
+                                <input class="form-control" type="text" placeholder="0.5=30min" aria-label="default input example" #tiempo (keyup)="0" (click)="hability=false" (click)="habiliityex=true">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+        <div class="col-8 mt-3 ">
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="card border-white">
+                        <div class="card-body d-flex align-items-end ">
+                            <div class="row  ">
+                                <div class="col-4"> <img src="../../../assets/img/light.jpg" alt="" class="img-fluid"></div>
+                                <div class="col-8">Eletrodoméstico<br>
+                                    <h1 *ngIf="habiliityex==true">{{select}}</h1>
+                                    Potencia: <h3 class="text-end" *ngIf="habiliityex==true">{{potencia.value}}</h3>
+                                    <br *ngIf="habiliityex==false">
+                                    Tiempo:<h3 class="text-end" *ngIf="habiliityex==true">{{tiempo.value}}</h3>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+                
+                
+            </div>
+            
+            
+        </div>
+        <div class="col-12 mt-2">
+            <div class="card bg-light ">
+                <div class="card-body ">
+                    <div class="row ">
+                        <div class="col-4"> <img src="../../../assets/img/fondoConsumo.png" alt=""  style="width: 8rem;"></div>
+                        <div class="col-8 text-end ">Gasto Diario<br>
+                            <h1 *ngIf="hability==true">{{sumar(potencia.value,tiempo.value)}}</h1><br>
+                            Gasto Mensual
+                            <h3 *ngIf="hability==true">{{sumarMes(potencia.value,tiempo.value)}}</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+
+        <div class="col-12 mt-2">
+            
+            <div class="d-grid gap-2">
+                <button class="btn btn-secondary" type="button" (click)="hability=true">Calcular</button>
+                <button class="btn btn-success text-secondary" type="reset" (click)="hability=false" (click)="habiliityex=false" autofocus>Reset</button>
+              </div>
+        </div>
+
+    </div>
+
+
+</div>
+
+
+

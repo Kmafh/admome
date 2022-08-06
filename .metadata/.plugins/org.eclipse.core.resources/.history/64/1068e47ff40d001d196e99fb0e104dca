@@ -1,0 +1,20 @@
+package com.admome.controller;
+
+import java.util.List;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.admome.model.Usuario;
+import com.admome.service.IUsuarioService;
+
+@RestController
+@RequestMapping("/api")
+public class UsuarioRestController {
+
+	@Autowired
+	private IUsuarioService  usuarioService;
+	public List<Usuario> index(){
+		return usuarioService.findAll();
+	}
+}

@@ -1,0 +1,5 @@
+package com.admome.controller;
+
+public class UsuarioRestController {
+
+}

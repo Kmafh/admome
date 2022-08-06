@@ -1,0 +1,5 @@
+package com.admome.service;
+
+public interface IUsuarioService {
+
+}

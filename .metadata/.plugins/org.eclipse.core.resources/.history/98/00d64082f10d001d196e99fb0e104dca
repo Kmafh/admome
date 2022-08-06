@@ -1,0 +1,5 @@
+package com.admome.dao;
+
+public interface IUsuarioDao {
+
+}
