@@ -10,3 +10,16 @@
 .font{
     font-family: Arial, Helvetica, sans-serif;
 }
+.bg-green{
+    background-color: #b8dc97;
+  }
+.alink{
+    text-decoration: none;
+    
+  }
+  .text-color-light{
+    color: #f8f9fa;
+  }
+  .text-color-light:hover{
+    color: #f8f9fa;
+  }

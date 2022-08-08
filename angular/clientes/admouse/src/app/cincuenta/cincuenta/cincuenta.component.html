@@ -1,53 +1,170 @@
-<div class="container-fluid">
-    <div class="row">
-
-        <div class="col-2 bg-light columenu">
-            <div class="row">
-                <div class="col-12 bg-oscuro text-center"><h6 class="mt-2">Kamaflash</h6></div>
-                <div class="col-12 menu"><img src="../../../assets/img/ingresos.png" alt=""><i class="bi bi-arrow-up-circle-fill"></i>Ingresos</div>
-                <div class="col-12 menu"><img src="../../../assets/img/gastos.png" alt="">Gastos</div>
-                <div class="col-12 menu"><img src="../../../assets/img/ahorro.png" alt="">Ahorro</div>
-                <div class="col-12"><hr></div>
-                <div class="col-12"><h6>Acceso rápido</h6></div>
-                <div class="col-12"><h6></h6></div>
-                <div class="col-12"><h6><button type="button" class="btn btn-success"></button>
-            Cocina</h6></div>
-                <div class="col-12"><h6><button type="button" class="btn btn-success"></button> Salón</h6></div>
-                <div class="col-12 d-flex align-items-end">...</div>
-                
-            </div>
-
-        </div>
-        <div class="col-10 ">
-
-            <div class="row  mt-1 border-bottom text-center">
-                <div class="col-2 mb-1 botonmenuhorizonte rounded text-center">Nuevo</div>
-                <div class="col-2 mb-1 menuhorizonte rounded"><div class="dropdown">
-                  <a class="btndropdown-toggle link-secondary" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                    Historial
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                  </ul>
-                </div></div>
-                <div class="col-2 mb-1 menuhorizonte rounded"><a  routerLink="algo">filtros</a></div>
-                <div class="col-2 mb-1 menuhorizonte rounded"><a  routerLink="consumo">proyectos</a></div>
-                <div class="col-2"></div>
-                <div class="col-2 "></div>
-            </div>
-            <div class="row  mt-1  text-center">
-                <div class="col-12">
+<div class="container-fluid  font text-secondary">
+    
+        <div class="col-12 bg-green desenfo">
+                <div class="row border-bottom  ">
+                    <div class="col-1  text-center cuadradoMenu d-none d-xl-block " >
+                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                            <span class="navbar-toggler-icontext-center"><i class="bi bi-grid-3x3-gap-fill"></i></span>
+                          </button>
+                          <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                            <div class="offcanvas-header">
+                              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Tablón</h5>
+                              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                     
-                    <div class="text-start ms-3"><h3>Cuentas</h3></div>
-                    
+                                <li class="nav-item dropdown text-start">
+                                    <div class="col-12 "><i class="bi bi-chat-dots"></i> </div>                              
+                                    <div class="col-12 "><hr></div>
+                                    <div class="col-12 menu rounded "><i class="bi bi-plus"></i><i class="bi bi-currency-exchange"></i> Ingresos</div>
+                                    <div class="col-12 menu rounded "><i class="bi bi-dash"></i><i class="bi bi-currency-exchange"></i> Gastos</div>
+                                    <div class="col-12 menu rounded "><i class="bi bi-piggy-bank-fill"></i> Ahorro</div>
+                                    <div class="col-12 menu rounded "><i class="bi bi-clipboard2-data-fill"></i> Balance</div>
+                                    <div class="col-12"><hr></div>
+                                    <div class="col-12"><h6><p class="d-none d-lg-block">Acceso rápido</p></h6></div>
+                                    <div class="col-12"><h6></h6></div>
+                                    <div class="col-12"><h6><button type="button" class="btn btn-success"></button>
+                                Cocina</h6></div>
+                                    <div class="col-12"><h6><button type="button" class="btn btn-success"></button> Salón</h6></div>
+                                    <div class="col-12 d-flex align-items-end">...</div>
+                                </li>
+                              </ul>
+                              
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-1  text-center menuhorizonte " >Historial</div>
+                    <div class="col-1  text-center menuhorizonte " >Proyectos</div>
+                    <div class="col-9  text-center " ></div>
                 </div>
-                <div class="col-12 ">Despues</div>
-            </div>
-
         </div>
+        <div class="row mt-2"><div class="col">
+            <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Tablón</li>
+                </ol>
+              </nav></div></div>
+        <div class="row pt-2 me-4">
+            <div class="col-8 ">
+                <div class="row ms-3">
+                    <div class="col-3  ">
+                                <div class="card border-0 mb-3 d-block w-100 ms-2 ">
+                                    <div class="row g-0">
+                                      <div class="col-md-4">
+                                        <img src="../../../assets/img/pexels-sheila-731217.png" class="img-fluid rounded-start" alt="...">
+                                      </div>
+                                      <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">A disfrutar!</h5>
+                                          <p class="card-text"> Total: 700€</p>
+                                          <p class="card-text"> Total: 700€</p>
+                                          <p class="card-text"><small class="text-muted">Ultimo gasto: Television</small></p>
+                                          
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="card border-0 mb-3 d-block w-100  ">
+                                  <div class="row g-0">
+                                    <div class="col-md-4">
+                                      <img src="../../../assets/img/pexels-taryn-elliott-4231477.png" class="img-fluid rounded-start" alt="...">
+                                  </div>
+                                  <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Ingresos</h5>
+                                        <br>
+                                        <p class="card-text"><small class="text-muted">Nomina: 1300€</small></p>
+                                        <p class="card-text"> Total: 1300€</p>
+                                    </div>
+                                    </div>
+                                  </div>
+                              </div>
+                              <div class="card border-0 mb-3 d-block w-100 ms-2 ">
+                                <div class="row g-0">
+                                  <div class="col-md-4">
+                                    <img src="../../../assets/img/pexels-taryn-elliott-4231477.png" class="img-fluid rounded-start" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                  <div class="card-body">
+                                      <h5 class="card-title">Ingresos</h5>
+                                      <br>
+                                      <p class="card-text"><small class="text-muted">Nomina: 1300€</small></p>
+                                      <p class="card-text"> Total: 1300€</p>
+                                  </div>
+                                  </div>
+                                </div>
+                            </div> 
+                      </div>
+                              
+                    <div class="col-3">
+                        
+                      </div>
+                        
+                    </div>
+                    <div class="col-3">
+                        
+                      </div>
+                    
+                   
+                
 
 
-    </div>
+                <div class="col-12 ">
+                    asd
+                    
+                                            
+                                        </div>
+            </div>
+            <div class="col-4">
+                <div class="">
+                    <div class="row desenfo rounded">
+                        
+                      <div class="row"><div class="col-12">Proyecto áctual</div></div>
+                      <div class="row ">
+                        <div class="col-1  ms-1 me-1"></div>
+                        <div class="col-3 card bg-light ms-1 me-1 text-center menuhorizonte"><h5><i class="bi bi-piggy-bank-fill"></i></h5>Ingresos<h1>1350</h1></div>
+                        <div class="col-3 card bg-light ms-1 me-1 text-center menuhorizonte"><h5><i class="bi bi-piggy-bank-fill"></i></h5>Gastos<h1>600</h1></div>
+                        <div class="col-3 card bg-light ms-1 me-1 text-center menuhorizonte"><h5><i class="bi bi-piggy-bank-fill"></i></h5>Ahorro<h1>2000€</h1></div>
+                        <div class="col-1 c ms-1 me-1"></div>
+                      </div>
+                      <div class="row mt-3">
+                        <div class="col-2 c ms-1 me-1"></div>
+                        <div class="col-4">
+                            <select class="form-select" aria-label="Default select example">
+                                <option value="1">Ingreso</option>
+                                <option value="2">Gasto Fijo</option>
+                          </select>
+                          <div class="form-check mt-2">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                              Fijo
+                            </label>
+                          </div>
+                          <div class="form-check mb-2">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                            <label class="form-check-label" for="flexRadioDefault2">
+                              Eventual
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="mb-3">
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="€">
+                            </div>
+                        </div>
+                        <div class="col-2 c ms-1 me-1"></div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12"><p class="text-center d-grid gap-2"><a href="#" class="btn btn-success">Fijo</a></p></div>
+                        <div class="col-12"><p class="text-center d-grid gap-2"><a href="#" class="btn btn-secondary">Eventual</a></p></div>
+                        
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        
+            
 </div>
