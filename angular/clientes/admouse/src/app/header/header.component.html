@@ -14,13 +14,13 @@
           
           
             <ul class="navbar-nav me-4 mb-2 mb-lg-0 d-flex justify-content-end d-flex align-items-center col-8">
-              <li class="nav-item me-2 ">
+              <li class="nav-item me-2 " *ngIf="login==true">
                 <form class="input-group input-group-sm" role="search">
                   <span class="input-group-text bg-white" id="basic-addon1"><i class="bi bi-search"></i></span>
                   <input class="form-control form-control-sm" type="text" placeholder="Buscar..." aria-label="Search" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                 </form>
               </li>
-              <li class="nav-item dropdown-center ms-2">
+              <li class="nav-item dropdown-center ms-2" *ngIf="login==true">
                 <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   <i class="bi bi-cast "></i>
                 </a>
@@ -29,7 +29,7 @@
                   <li><a class="dropdown-item" href="#">Consejos</a></li>
                 </ul>
               </li>
-              <li class="nav-item dropdown-center">
+              <li class="nav-item dropdown-center" *ngIf="login==true">
                 <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   <i class="bi bi-person-circle"></i>
                 </a>
@@ -40,6 +40,11 @@
                   <li><hr class="dropdown-divider"></li>
                   <li><a class="dropdown-item" href="#">Salir</a></li>
                 </ul>
+              </li>
+              <li class="nav-item dropdown-center" *ngIf="login==false">
+                <a class="nav-link " href="#" role="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <i class="bi bi-person-circle "></i>
+                </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link disabled">Premium</a>
@@ -52,7 +57,46 @@
   </nav>
   
 </div>
-
+<div class="col-12 bg-green desenfo">
+  <div class="row border-bottom  " *ngIf="login==true">
+      <div class="col-1  text-center cuadradoMenu d-none d-xl-block " >
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+              <span class="navbar-toggler-icontext-center"><i class="bi bi-grid-3x3-gap-fill"></i></span>
+            </button>
+            <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Tablón</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+      
+                  <li class="nav-item dropdown text-start">
+                      <div class="col-12 "><i class="bi bi-chat-dots"></i> </div>                              
+                      <div class="col-12 "><hr></div>
+                      <div class="col-12 menu rounded "><i class="bi bi-plus"></i><i class="bi bi-currency-exchange"></i> Ingresos</div>
+                      <div class="col-12 menu rounded "><i class="bi bi-dash"></i><i class="bi bi-currency-exchange"></i> Gastos</div>
+                      <div class="col-12 menu rounded "><i class="bi bi-piggy-bank-fill"></i> Ahorro</div>
+                      <div class="col-12 menu rounded "><i class="bi bi-clipboard2-data-fill"></i> Balance</div>
+                      <div class="col-12"><hr></div>
+                      <div class="col-12"><h6><p class="d-none d-lg-block">Acceso rápido</p></h6></div>
+                      <div class="col-12"><h6></h6></div>
+                      <div class="col-12"><h6><button type="button" class="btn btn-success"></button>
+                  Cocina</h6></div>
+                      <div class="col-12"><h6><button type="button" class="btn btn-success"></button> Salón</h6></div>
+                      <div class="col-12 d-flex align-items-end">...</div>
+                  </li>
+                </ul>
+                
+              </div>
+            </div>
+      </div>
+      <div class="col-1  text-center menuhorizonte " >Historial</div>
+      <div class="col-1  text-center menuhorizonte " >Proyectos</div>
+      <div class="col-9  text-center " ></div>
+  </div>
+  <div class="col bg-green" *ngIf="login==false">&nbsp;</div>
+</div>
 
 
 <!--MODAL DE BUSUEDA-->
@@ -76,7 +120,7 @@
 
 
 
-<!-- Modal LOGIN
+<!-- Modal LOGIN-->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -100,7 +144,7 @@
       </div>
     </div>
   </div>
-</div> -->
+</div>
 
 
 

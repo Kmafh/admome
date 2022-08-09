@@ -12,7 +12,7 @@ import swal from 'sweetalert2';
 export class HeaderComponent {
    public titulo:string="AdMouse";
    public usuario : Usuario= new Usuario();
-
+   public login : boolean=true;
    constructor(private usuarioService: UsuarioService,private router: Router){}
 
    create():void{

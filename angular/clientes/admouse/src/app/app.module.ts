@@ -15,6 +15,7 @@ import { CincuentaComponent } from './cincuenta/cincuenta/cincuenta.component';
 import { HttpClientModule } from '@angular/common/http'
 import { FormsModule } from '@angular/forms';
 import { CookieService } from 'ngx-cookie-service';
+import { AddTableRegisComponent } from './cincuenta/cincuenta/addtableregis/add-table-regis.component';
 
 const routes: Routes = [
   
@@ -37,7 +38,8 @@ const routes: Routes = [
     BodyComponent,
     DirectivaComponent,
     UsuarioComponent,
-    ConsumoComponent
+    ConsumoComponent,
+    AddTableRegisComponent
   ],
   imports: [
     BrowserModule,

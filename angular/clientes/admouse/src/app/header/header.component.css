@@ -7,4 +7,15 @@
   background-color: #fbfbfb;
   
 }
-
+.menuhorizonte{
+  color: #6d6d71;
+  padding-top: 3px;
+  font-size: small;
+  
+}
+.menuhorizonte:hover{
+  
+  color: #6d6d71;
+  background-color: #939790;
+  border-top: #6d6d71 5px;
+}

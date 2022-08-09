@@ -20,18 +20,7 @@
     color: #939790;
     
 }
-.menuhorizonte{
-    color: #6d6d71;
-    padding-top: 3px;
-    font-size: small;
-    
-}
-.menuhorizonte:hover{
-    
-    color: #6d6d71;
-    background-color: #939790;
-    border-top: #6d6d71 5px;
-}
+
 .botonmenuhorizonte{
     background-color: #f7a811;
     border: 1px #f7a811 solid;
@@ -49,10 +38,13 @@
 .body{
     
     display: grid;
-    min-height: 90vh;
-    grid-template-rows: 102% 1fr auto;
+    min-height: 25vh;
+    grid-template-rows: 100% 1fr auto;
     
 }
 .desenfo{
     box-shadow: 0 0 10px 1px #bdc0b9;
   }
+.difumi{
+    box-shadow: 1px 1px 10px 1px #bdc0b9;
+}
